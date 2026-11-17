@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Решения по безопасности · Демо BASF</title>
+  <link rel="stylesheet" href="course.css">
+  <script defer src="content.js"></script>
+  <script defer src="storage.js"></script>
+  <script defer src="course.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <nav aria-label="Навигация практикума">
+        <button type="button" data-action="map" disabled><span data-icon="map"></span>Карта тем</button>
+        <button type="button" data-action="memo" disabled><span data-icon="book"></span>Памятка</button>
+      </nav>
+      <img class="logo" src="assets/logo.png" alt="BASF — We create chemistry" width="105" height="38">
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="wrap load-state"><p role="status">Загружаются изображения курса…</p></div>
+    <noscript><p class="wrap">Для прохождения курса включите JavaScript.</p></noscript>
+  </main>
+  <dialog id="notice" aria-labelledby="notice-title">
+    <div class="dialog-body">
+      <h2 id="notice-title">Раздел недоступен в демо-фрагменте</h2>
+      <p id="notice-topic"></p>
+      <button class="primary" type="button" data-action="close-notice">Закрыть</button>
+    </div>
+  </dialog>
+  <p class="sr-only" id="announcement" aria-live="polite"></p>
+</body>
+</html>
